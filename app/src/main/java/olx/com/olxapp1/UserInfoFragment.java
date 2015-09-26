@@ -81,8 +81,8 @@ public class UserInfoFragment extends Fragment {
             @Override
             public void afterTextChanged(Editable s) {
 
-                if (!s.toString().contains("Rs.")) {
-                    phone_no.setText("Rs.");
+                if (!s.toString().contains("+91")) {
+                    phone_no.setText("+91");
                     Selection.setSelection(phone_no.getText(), phone_no.getText().length());
                 }
             }
