@@ -88,9 +88,14 @@ public class UserInfoFragment extends Fragment {
             }
         });
 
-        UiUtil.showCustomProgressNoIcon(getActivity(), "Getting your current location..");
+        location.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                UiUtil.showCustomProgressNoIcon(getActivity(), "Getting your current location..");
 
-        seekLocation();
+                seekLocation();
+            }
+        });
 
         submit_button.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -29,6 +29,8 @@ public class CategoryActivity extends CustomActivity {
 
         setContentView(R.layout.blank_activity_with_fragment_with_action_bar);
 
+        initActionbar();
+        setTitle("Select Category");
         {
             ArrayList<String> categoryLev2 = new ArrayList<String>();
             category.set(0,categoryLev2).add("Windows");
