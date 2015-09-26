@@ -46,11 +46,13 @@ public class CategoryListAdapterLevelOne extends RecyclerView.Adapter<CategoryLi
 
         holder.category_text.setText(category.get(position));
 
-        String category_lev_des = "";
+        StringBuffer category_lev_des = new StringBuffer();
 
-        for (String category_lev : activity.category.get(0) ){
+        for (String category_lev : activity.category.get(position) ){
 
-            category_lev_des.concat( category_lev + ",");
+            Log.d("activity.category.get(position)", category_lev);
+
+            category_lev_des.append(category_lev + ",");
         }
 
         holder.category_description.setText(category_lev_des);
@@ -61,7 +63,7 @@ public class CategoryListAdapterLevelOne extends RecyclerView.Adapter<CategoryLi
 
                 CategoryLevelTwoFragment categoryLevelTwoFragment = new CategoryLevelTwoFragment();
                 Bundle bundle = new Bundle();
-                bundle.putString("cat_id", category.get(position));
+                bundle.putString("cat_id", position+"");
                 categoryLevelTwoFragment.setArguments(bundle);
                 activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragment, categoryLevelTwoFragment ).addToBackStack(null).commit();
             }
@@ -75,7 +77,6 @@ public class CategoryListAdapterLevelOne extends RecyclerView.Adapter<CategoryLi
         View itemLayoutView =
                 LayoutInflater.from(parent.getContext()).inflate(R.layout.category_adapter_level_one, null);
 
-        Log.d("dd", "VIEW POPULATED FOR after product adapter");
         return new ItemViewHolder(itemLayoutView);
     }
 

@@ -1,7 +1,6 @@
 package olx.com.olxapp1.category;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
@@ -18,45 +17,47 @@ import olx.com.olxapp1.R;
  */
 public class CategoryActivity extends CustomActivity {
 
-    ArrayList<ArrayList<String>> category = new ArrayList<ArrayList<String>>();
+    ArrayList<ArrayList<String>> category = new ArrayList<ArrayList<String>>(3);
 
     private Toolbar mToolbar;
     private TypefaceTextView tv_title;
 
     @Override
-    public void onCreate(Bundle savedInstanceState, PersistableBundle persistentState) {
-        super.onCreate(savedInstanceState, persistentState);
-
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.blank_activity_with_fragment_with_action_bar);
 
         initActionbar();
         setTitle("Select Category");
         {
             ArrayList<String> categoryLev2 = new ArrayList<String>();
-            category.set(0,categoryLev2).add("Windows");
-            category.set(0,categoryLev2).add("Nokia");
-            category.set(0,categoryLev2).add("Iphone");
-            category.set(0,categoryLev2).add("BlackBerry");
-            category.set(0,categoryLev2).add("Android");
+            categoryLev2.add("Windows");
+            categoryLev2.add("Nokia");
+            categoryLev2.add("Iphone");
+            categoryLev2.add("BlackBerry");
+            categoryLev2.add("Android");
+            category.add(categoryLev2);
         }
 
         {
             ArrayList<String> categoryLev2 = new ArrayList<String>();
-            category.set(1,categoryLev2).add("Fait");
-            category.set(1,categoryLev2).add("Honda");
-            category.set(1,categoryLev2).add("Maruti");
-            category.set(1,categoryLev2).add("Hyundai");
-            category.set(1,categoryLev2).add("Volkswagon");
-            category.set(1,categoryLev2).add("Skoda");
+            categoryLev2.add("Fait");
+            categoryLev2.add("Honda");
+            categoryLev2.add("Maruti");
+            categoryLev2.add("Hyundai");
+            categoryLev2.add("Volkswagon");
+            categoryLev2.add("Skoda");
+            category.add(categoryLev2);
         }
 
         {
             ArrayList<String> categoryLev2 = new ArrayList<String>();
-            category.set(2,categoryLev2).add("Air Conditioner");
-            category.set(2,categoryLev2).add("TV");
-            category.set(2,categoryLev2).add("Refrigator");
-            category.set(2,categoryLev2).add("Camera");
-            category.set(2,categoryLev2).add("Washing Machine");
+            categoryLev2.add("Air Conditioner");
+            categoryLev2.add("TV");
+            categoryLev2.add("Refrigator");
+            categoryLev2.add("Camera");
+            categoryLev2.add("Washing Machine");
+            category.add(categoryLev2);
         }
 
         if(savedInstanceState!=null){
