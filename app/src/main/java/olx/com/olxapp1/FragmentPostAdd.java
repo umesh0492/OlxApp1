@@ -45,7 +45,7 @@ public class FragmentPostAdd extends Fragment {
 //    private static final String SEARCH_LOCATION_URL = "https://maps.googleapis.com/maps/api/place/autocomplete/json?key=AIzaSyA6dAr6XfXYV_E2HB6uyAxTJPvmGFOtIdA&input=%s&radius=100000&language=en&components=country:in";
 
     @State
-    String s_category_1,s_category_2, s_location, s_price, s_old;
+    String s_category_1 = "",s_category_2 =  "", s_location = "", s_price = "", s_old = "";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

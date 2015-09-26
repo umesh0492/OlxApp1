@@ -64,7 +64,7 @@ public class CategoryListAdapterLevelTwo extends RecyclerView.Adapter<CategoryLi
     public ItemViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         // create a new view based on type.
         View itemLayoutView =
-                LayoutInflater.from(parent.getContext()).inflate(R.layout.category_adapter_level_one, null);
+                LayoutInflater.from(parent.getContext()).inflate(R.layout.category_adapter_level_two, null);
 
         Log.d("dd", "VIEW POPULATED FOR after product adapter");
         return new ItemViewHolder(itemLayoutView);
