@@ -204,6 +204,12 @@
             app:et_supportMaxLines="6"
             android:padding="8dp"/>
 
+
+        <include
+            layout="@layout/layout_super_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
         <com.rey.material.widget.Button
             android:id="@+id/submit_button"
             style="@style/LightRaiseWaveColorButtonRippleStyle"
@@ -224,8 +230,6 @@
             android:textSize="14sp"
             app:customTypeface="Roboto-Regular.ttf"
             app:rd_delayClick="afterRelease" />
-
-
     </LinearLayout>
 
 </ScrollView>

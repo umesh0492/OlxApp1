@@ -8,9 +8,11 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.text.Editable;
 import android.text.Selection;
 import android.text.TextUtils;
@@ -20,6 +22,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.malinskiy.superrecyclerview.SuperRecyclerView;
 import com.rey.material.ui.UiUtil;
 import com.rey.material.widget.Button;
 import com.rey.material.widget.EditText;
@@ -31,6 +34,7 @@ import java.util.Locale;
 
 import icepick.State;
 import olx.com.olxapp1.category.CategoryActivity;
+import olx.com.olxapp1.category.CategoryListAdapterLevelOne;
 import olx.com.olxapp1.utils.MyLocation;
 import olx.com.olxapp1.utils.Preferences;
 
@@ -41,6 +45,10 @@ public class FragmentPostAdd extends Fragment {
     private  View root;
 
     private LocationManager lm;
+
+    private SuperRecyclerView mRecyclerView_images;
+    CategoryListAdapterLevelOne categoryListAdapterLevelOne;
+    ImageListAdapter imageListAdapter;
 
 //    private static final String SEARCH_LOCATION_URL = "https://maps.googleapis.com/maps/api/place/autocomplete/json?key=AIzaSyA6dAr6XfXYV_E2HB6uyAxTJPvmGFOtIdA&input=%s&radius=100000&language=en&components=country:in";
 
@@ -53,6 +61,8 @@ public class FragmentPostAdd extends Fragment {
         root = inflater.inflate(R.layout.fragment_post_add, container, false);
 
         init();
+
+        initImageListView();
 
         return root;
     }
@@ -185,7 +195,9 @@ public class FragmentPostAdd extends Fragment {
 
         String cat[] ={"Mobile", "Cars", "Electronics"};
 
-        if(requestCode==981 &&  resultCode== -1){
+        if (resultCode != -1) return;
+
+        if(requestCode==981){
             int cat_id = Integer.parseInt(data.getStringExtra("cat_lev_one"));
 
             s_category_1 = cat[cat_id];
@@ -195,6 +207,13 @@ public class FragmentPostAdd extends Fragment {
 
             updateTitleAndDes();
         }
+
+        if (requestCode == 0) {
+            Uri photoUri = data.getData();
+
+            imageListAdapter.addImage(photoUri);
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     public void seekLocation(){
@@ -278,9 +297,25 @@ public class FragmentPostAdd extends Fragment {
 
     void updateTitleAndDes(){
 
-        title.setText("Selling "+s_category_2+" product_name "+s_category_1+" at" + s_price +", "+s_old+" year old, in "+s_location);
+        title.setText("Selling " + s_category_2 + " product_name " + s_category_1 + " at " + s_price + ", " + s_old + " year old, in " + s_location);
 
-        description.setText("Selling "+s_category_2+" product_name "+s_category_1+" at" + s_price +", "+s_old+" year old, in "+s_location
+        description.setText("Selling " + s_category_2 + " product_name " + s_category_1 + " at " + s_price + ", " + s_old + " year old, in " + s_location
                 + ". Grab it ");
+    }
+
+    private void initImageListView() {
+
+        mRecyclerView_images = (SuperRecyclerView) root.findViewById(R.id.recycler_list);
+        mRecyclerView_images.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        populateViewList();
+
+    }
+
+    private void populateViewList() {
+
+        imageListAdapter = new ImageListAdapter(getActivity());
+        mRecyclerView_images.setAdapter(imageListAdapter);
+
     }
 }
