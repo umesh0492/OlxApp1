@@ -2,4 +2,8 @@
     <string name="app_name">OLX App1</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="location_not_enabled">We need your location to give you best offers nearby. Please enable location. </string>
+    <string name="open_location_settings">Open location settings</string>
+
 </resources>

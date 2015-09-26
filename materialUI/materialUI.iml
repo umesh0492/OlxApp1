@@ -89,16 +89,29 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 23 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="scout-0.1.0" level="project" />
+    <orderEntry type="library" exported="" name="icepick-3.1.0" level="project" />
+    <orderEntry type="library" exported="" name="material-1.2.1.6-SNAPSHOT" level="project" />
+    <orderEntry type="library" exported="" name="data.priority-map-0.0.2" level="project" />
+    <orderEntry type="library" exported="" name="picasso-2.5.0" level="project" />
+    <orderEntry type="library" exported="" name="icepick-processor-3.1.0" level="project" />
+    <orderEntry type="library" exported="" name="core.cache-0.6.3" level="project" />
+    <orderEntry type="library" exported="" name="support-v4-23.0.1" level="project" />
+    <orderEntry type="library" exported="" name="superrecyclerview-1.1.0" level="project" />
+    <orderEntry type="library" exported="" name="guava-18.0" level="project" />
+    <orderEntry type="library" exported="" name="quoin-0.1.2" level="project" />
     <orderEntry type="library" exported="" name="cardview-v7-23.0.1" level="project" />
     <orderEntry type="library" exported="" name="design-23.0.1" level="project" />
+    <orderEntry type="library" exported="" name="clojure-1.6.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-23.0.1" level="project" />
-    <orderEntry type="library" exported="" name="picasso-2.5.0" level="project" />
+    <orderEntry type="library" exported="" name="auto-common-0.3" level="project" />
+    <orderEntry type="library" exported="" name="slingshot-0.10.3" level="project" />
+    <orderEntry type="library" exported="" name="auto-service-1.0-rc2" level="project" />
     <orderEntry type="library" exported="" name="library-2.4.0" level="project" />
     <orderEntry type="library" exported="" name="library-2.4.1" level="project" />
+    <orderEntry type="library" exported="" name="stencil-0.3.5" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-23.0.1" level="project" />
-    <orderEntry type="library" exported="" name="support-v4-23.0.1" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.0.1" level="project" />
-    <orderEntry type="library" exported="" name="superrecyclerview-1.1.0" level="project" />
     <orderEntry type="module" module-name="search_ui_lib" exported="" />
   </component>
 </module>
