@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white_opaque">#FFFFFFFF</color>
+    <color name="text_color_light">#aa545454</color>
+    <color name="fb_color">#3B5998</color>
+    <color name="light_blue_color">#ff989ce8</color>
+    <color name="rc_card_highlight_blue">#ff2980b9</color>
+    <color name="rc_card_gray">#ff303030</color>
+    <color name="rc_card_gray_light">#fff0f0f0</color>
+    <color name="rc_card_border">#ff909090</color>
+    <color name="bg_color">#fff3f3f3</color>
+    <color name="bg_color_darker">#ffd1d1d1</color>
+    <color name="white_translucent">#EEFFFFFF</color>
+    <color name="white_more_translucent">#44FFFFFF</color>
+    <color name="black_more_translucent">#44000000</color>
+    <color name="accent_primary">#ffbbbbbb</color>
+    <color name="accent_secondary">#ff7e7979</color>
+    <color name="redcarpet_splash">#fff40313</color>
+    <color name="redcarpet_splash_translucent">#44f40313</color>
+    <color name="redcarpet_black_translucent">#99000000</color>
+
+    <color name="redcarpet_accent_trans">#ccb8020e</color>
+    <color name="redcarpet_orange">#faff3920</color>
+    <color name="redcarpet_orange_translucent">#ccff3920</color>
+    <color name="redcarpet_light_orange_translucent">#c7ff9f46</color>
+    <color name="redcarpet_green_translucent">#1ab021</color>
+    <!--<color name="redcarpet_primary">#FC2B1D</color> original, too bright -->
+    <color name="redcarpet_primary">#ffe52b1d</color>
+    <color name="redcarpet_red_new">#eb221d</color>
+    <!--<color name="redcarpet_primary">#E53935</color> material dull-->
+    <color name="redcarpet_primary_darker">#ffa72727</color>
+    <color name="redcarpet_accent">#ffc22115</color>
+
+    <color name="disabled_gray">#ffe1e0df</color>
+    <color name="disabled_gray_dark">#ffc0bfbe</color>
+    <color name="light_gray">#ccf3f2f1</color>
+    <color name="black">#000</color>
+    <color name="translucent_black">#EE000000</color>
+    <color name="transparent_black">#AA000000</color>
+    <color name="list_background">#F5F5F5</color>
+    <color name="list_background_end">#FAFAFA</color>
+    <color name="list_background_pressed">#ffcc2534</color>
+    <color name="light_grey">#ccc</color>
+    <color name="grey">#777</color>
+    <color name="dark_grey">#333</color>
+
+
+    <item name="white" type="color">#FFFFFFFF</item>
+    <color name="input_gray">#ffec1511</color>
+    <color name="button_green">#ffec1511</color>
+    <color name="button_gray">#ffcb130b</color>
+    <color name="blue">#FF1784C7</color>
+    <color name="yellow_butter">#ffe0d700</color>
+
+
+
+
+</resources>

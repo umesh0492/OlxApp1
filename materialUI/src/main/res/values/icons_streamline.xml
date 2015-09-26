@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="check_bubble_tick">&#xe2a3;</string>
+    <string name="cross_bubble_cross">&#xe2a9;</string>
+
+    <string name="house_2">&#xe360;</string>
+    <string name="wallet_2">&#xe14f;</string>
+    <string name="bell">&#xe2bf;</string>
+    <string name="list_1">&#xe415;</string>
+    <string name="file_add">&#xe1f6;</string>
+    <string name="arrow_right">&#xe5a9;</string>
+    <string name="heart_1">&#xe035;</string>
+    <string name="usb">&#xe3eb;</string>
+    <string name="phone_1">&#xe09c;</string>
+    <string name="arrow">&#xe09c;</string>
+    <string name="arrow_68">&#xe5cd;</string>
+    <string name="arrow_67">&#xe5cc;</string>
+    <string name="arrow_31">&#xe5a8;</string>
+    <string name="connection_3">&#xe0e8;</string>
+    <string name="present">&#xe03b;</string>
+    <string name="reward">&#xe01e;</string>
+    <string name="stopwatch">&#xe2c7;</string>
+    <string name="marker_2">&#xe342;</string>
+    <string name="lock">&#121;</string>
+    <string name="unlock">&#x44;</string>
+    <string name="crosshair_1">&#x67;</string>
+    <string name="like">&#xe032;</string>
+    <string name="dislike">&#xe034;</string>
+    <string name="question">&#xe2da;</string>
+    <string name="call_1">&#xe08c;</string>
+    <string name="star_1">&#xe03f;</string>
+    <string name="bubble_comment_2">&#xe060;</string>
+    <string name="add_button">&#xe24d;</string>
+    <string name="tag_1">/</string>
+
+    <string name="credit_cards">&#xe2f9;</string>
+    <string name="reward_and_offers">=</string>
+    <string name="bill">&#xe142;</string>
+    <string name="money">&#xe2f7;</string>
+    <string name="plus_sign">&#xe24b;</string>
+    <string name="minus_sign">&#xe271;</string>
+    <string name="basket_add">&#xe133;</string>
+    <string name="basket_minus">&#xe134;</string>
+    <string name="shopping_cart_fill">&#xe144;</string>
+    <string name="cart_down_arrow">&#xe139;</string>
+    <string name="cart_up_arrow">&#xe138;</string>
+
+</resources>

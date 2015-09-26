@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OLXApp1.iml" filepath="$PROJECT_DIR$/OLXApp1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/materialUI/materialUI.iml" filepath="$PROJECT_DIR$/materialUI/materialUI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/search_ui_lib/search_ui_lib.iml" filepath="$PROJECT_DIR$/search_ui_lib/search_ui_lib.iml" />
+    </modules>
+  </component>
+</project>

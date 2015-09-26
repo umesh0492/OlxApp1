@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/white"
+    android:minHeight="?attr/actionBarSize"
+    android:elevation="6dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <com.rey.material.ui.TypefaceTextView
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/icon_arrow_back"
+            android:textColor="@color/material_red_500"
+            android:textSize="28sp"
+            app:customTypeface="@string/font_material_icons" />
+
+        <com.rey.material.ui.TypefaceTextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/up"
+            android:gravity="center_vertical"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:text="@string/logo_ttf_string"
+            android:textColor="@color/material_red_500"
+            android:textSize="22sp"
+            android:visibility="gone"
+            app:customTypeface="@string/font_logo" />
+
+        <LinearLayout
+            android:id="@+id/icon_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.rey.material.ui.TypefaceTextView
+                android:id="@+id/merchant_button_share"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_white_outline_selector_red_inside_red"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/icon_share"
+                android:textColor="@drawable/lock_button_bg"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:customTypeface="@string/font_material_icons" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@id/icon_layout"
+            android:layout_toRightOf="@id/logo"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingRight="0dp">
+
+            <com.rey.material.ui.TypefaceTextView
+                android:id="@+id/actionbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="Title"
+                android:textColor="@color/material_red_500"
+                android:textSize="22sp"
+                app:customTypeface="@string/roboto_regular"/>
+
+            <com.rey.material.ui.TypefaceTextView
+                android:id="@+id/actionbar_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:text="Subtitle"
+                android:textColor="@color/material_red_500"
+                android:textSize="14sp"
+                android:visibility="gone"
+                app:customTypeface="@string/roboto_light"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

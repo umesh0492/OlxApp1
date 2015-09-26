@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <corners android:radius="3dp" />
+            <stroke
+                android:width="1.2dp"
+                android:color="@color/rc_card_border" />
+            <solid android:color="@color/white_opaque" />
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+
+        </shape>
+    </item>
+</layer-list>

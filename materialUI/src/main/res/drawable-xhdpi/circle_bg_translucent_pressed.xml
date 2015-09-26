@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+
+        <shape
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="3.0"
+            android:useLevel="false">
+            <solid android:color="@color/redcarpet_accent" />
+
+            <size
+                android:width="50dp"
+                android:height="50dp" />
+
+            <stroke
+                android:width="2dp"
+                android:color="@color/redcarpet_accent" />
+        </shape>
+
+    </item>
+</layer-list>

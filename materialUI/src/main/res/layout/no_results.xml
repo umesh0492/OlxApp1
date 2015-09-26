@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:redcarpet="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/no_results_nearby"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:visibility="gone">
+
+    <com.rey.material.ui.TypefaceTextView
+        android:id="@+id/no_results_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/fa_magic"
+        android:textColor="@color/material_red_500"
+        android:textSize="50sp"
+        redcarpet:customTypeface="@string/font_awesome" />
+
+    <com.rey.material.ui.TypefaceTextView
+        android:id="@+id/no_results_nearby_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Nothing in here yet"
+        android:textColor="@color/text_color"
+        android:textSize="18sp" />
+
+</LinearLayout>

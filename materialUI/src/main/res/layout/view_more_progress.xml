@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/retry_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <com.rey.material.ui.TypefaceTextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                />
+            <com.rey.material.ui.TypefaceTextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="tap to retry"
+                android:textColor="@color/grey_80"
+                />
+        </LinearLayout>
+
+        <com.rey.material.widget.ProgressView
+            android:id="@+id/progressBarCircularIndetermininate"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            app:v_styleId="@array/pv_circular_in"
+            app:cpd_strokeColors="@color/material_red_400"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+            app:pv_progressMode="indeterminate"/>
+
+    </RelativeLayout>
+</LinearLayout>

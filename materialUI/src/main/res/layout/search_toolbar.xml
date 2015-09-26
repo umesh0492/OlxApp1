@@ -1,0 +1,59 @@
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/action_bar"
+    contentInsetLeft="72dp"
+    contentInsetStart="72dp"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:elevation="4dp"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetLeft="72dp"
+    app:contentInsetStart="72dp"
+    app:popupTheme="@style/ActionBarPopupThemeOverlay"
+    app:theme="@style/ActionBarThemeOverlay">
+
+    <LinearLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.rey.material.widget.EditText
+            style="@style/Material.Widget.EditText.Light"
+            android:id="@+id/search_keyword"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="Search for Product and Store"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="2dp"
+            android:singleLine="true"
+            android:textColorHint="@color/grey_40"
+            android:textColor="@color/grey_80"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:maxLength="30"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            app:et_supportMode="none"
+            app:et_labelEnable="false"
+            app:et_labelPadding="0dp"
+            app:et_dividerPadding="3dp"
+            app:et_dividerColor="@drawable/color_label"/>
+
+        <ImageView
+            android:id="@+id/search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_cancel_white_24dp" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

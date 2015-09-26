@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_logo">logo.ttf</string>
+    <string name="logo_ttf_string">&#xe600;</string>
+</resources>

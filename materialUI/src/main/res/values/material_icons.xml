@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icon_my_location">&#xe600;</string>
+    <string name="icon_added_to_cart">&#xe601;</string>
+    <string name="icon_clear_btn">&#xe602;</string>
+    <string name="icon_done">&#xe603;</string>
+    <string name="icon_redcarpet">&#xe604;</string>
+    <string name="icon_shopping_basket_done">&#xe605;</string>
+    <string name="icon_share">&#xe606;</string>
+    <string name="icon_shopping_basket">&#xe607;</string>
+    <string name="icon_assignment_turned_in">&#xe608;</string>
+    <string name="icon_add_to_cart">&#xe609;</string>
+
+    <string name="icon_paste">&#xe612;</string>
+    <string name="icon_thumbs_ups">&#xe613;</string>
+    <string name="icon_event_available">&#xe614;</string>
+    <string name="icon_call">&#xe615;</string>
+    <string name="icon_grade_star">&#xe616;</string>
+    <string name="icon_receipt">&#xe617;</string>
+    <string name="icon_wallet">&#xe618;</string>
+    <string name="icon_home">&#xe619;</string>
+    
+    <string name="icon_place">&#xe60a;</string>
+    <string name="icon_location_searching">&#xe60b;</string>
+    <string name="icon_clock">&#xe60c;</string>
+    <string name="icon_arrow_right">&#xe60d;</string>
+    <string name="icon_search">&#xe60e;</string>
+
+    <string name="icon_map">&#xe61a;</string>
+    <string name="icon_today_calender">&#xe61b;</string>
+    <string name="icon_public_globe">&#xe61c;</string>
+    <string name="icon_redeem_gift">&#xe61d;</string>
+    <string name="icon_chat_bubble">&#xe61e;</string>
+    <string name="icon_chat">&#xe61f;</string>
+    
+    <string name="icon_shopping_cart">&#xe60f;</string>
+    <string name="icon_menu">&#xe610;</string>
+    <string name="icon_arrow_back">&#xe611;</string>
+</resources>
