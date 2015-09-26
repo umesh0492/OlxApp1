@@ -12,13 +12,34 @@
         android:paddingBottom="@dimen/activity_vertical_margin"
         android:orientation="vertical">
 
+        <com.rey.material.widget.Button
+            android:id="@+id/select_category"
+            style="@style/LightRaiseWaveColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_pressed"
+            android:maxLength="30"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="Select Category"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:customTypeface="Roboto-Regular.ttf"
+            app:rd_delayClick="afterRelease" />
+
         <com.rey.material.widget.EditText
             android:id="@+id/category"
             app:et_inputId="@+id/title_rey"
             style="@style/Material.Widget.EditText.Light"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Select Category"
+            android:hint="Category"
             android:inputType="text"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
             android:textColor="@color/grey_80"
@@ -61,13 +82,35 @@
             app:et_supportMode="none"
             android:padding="8dp"/>
 
+
+        <com.rey.material.widget.Button
+            android:id="@+id/change_location"
+            style="@style/LightRaiseWaveColorButtonRippleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_pressed"
+            android:maxLength="30"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:text="Change Location"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:customTypeface="Roboto-Regular.ttf"
+            app:rd_delayClick="afterRelease" />
+
         <com.rey.material.widget.EditText
             android:id="@+id/location"
             app:et_inputId="@+id/location_rey"
             style="@style/Material.Widget.EditText.Light"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Select Location"
+            android:hint="Location"
             android:inputType="text"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
             android:textColor="@color/grey_80"

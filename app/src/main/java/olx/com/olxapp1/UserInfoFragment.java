@@ -88,7 +88,7 @@ public class UserInfoFragment extends Fragment {
             }
         });
 
-        location.setOnClickListener(new View.OnClickListener() {
+        root.findViewById(R.id.select_location).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 UiUtil.showCustomProgressNoIcon(getActivity(), "Getting your current location..");
@@ -174,6 +174,8 @@ public class UserInfoFragment extends Fragment {
                     }
                 }
             };
+            MyLocation myLocation = new MyLocation();
+            myLocation.getLocation(getContext(), locationResult);
         }
         else {
             UiUtil.hideProgress();

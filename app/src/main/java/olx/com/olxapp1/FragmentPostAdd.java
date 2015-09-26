@@ -78,6 +78,9 @@ public class FragmentPostAdd extends Fragment {
 
         price.setText("Rs.");
 
+        //location.setClickable(true);
+        category.setClickable(true);
+
         Selection.setSelection(price.getText(), price.getText().length());
 
         price.addTextChangedListener(new TextWatcher() {
@@ -100,6 +103,8 @@ public class FragmentPostAdd extends Fragment {
                 }
                 s_price = price.getText().toString();
 
+                updateTitleAndDes();
+
             }
         });
 
@@ -117,11 +122,12 @@ public class FragmentPostAdd extends Fragment {
             @Override
             public void afterTextChanged(Editable s) {
                 s_old = old.getText().toString();
+                updateTitleAndDes();
             }
 
         });
 
-        category.setOnClickListener(new View.OnClickListener() {
+        root.findViewById(R.id.select_category).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -130,7 +136,7 @@ public class FragmentPostAdd extends Fragment {
         });
 
 
-        location.setOnClickListener(new View.OnClickListener() {
+        root.findViewById(R.id.change_location).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -179,13 +185,15 @@ public class FragmentPostAdd extends Fragment {
 
         String cat[] ={"Mobile", "Cars", "Electronics"};
 
-        if(requestCode==981){
+        if(requestCode==981 &&  resultCode== -1){
             int cat_id = Integer.parseInt(data.getStringExtra("cat_lev_one"));
 
             s_category_1 = cat[cat_id];
             s_category_2 = data.getStringExtra("cat_lev_two");
 
             category.setText(s_category_1+" > "+s_category_2);
+
+            updateTitleAndDes();
         }
     }
 
@@ -221,12 +229,12 @@ public class FragmentPostAdd extends Fragment {
                                 }
 
 
-                               s_location = TextUtils.join(System.getProperty("line.separator"),
-                                       addressFragments);
+                                s_location = TextUtils.join(System.getProperty("line.separator"),
+                                        addressFragments);
                                 location.setText(s_location);
 
                                 UiUtil.hideProgress();
-                                 }
+                            }
 
                         } catch (IOException e) {
                             UiUtil.hideProgress();
@@ -235,6 +243,8 @@ public class FragmentPostAdd extends Fragment {
                     }
                 }
             };
+            MyLocation myLocation = new MyLocation();
+            myLocation.getLocation(getContext(), locationResult);
         }
         else {
             UiUtil.hideProgress();
